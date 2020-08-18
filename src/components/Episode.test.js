@@ -82,7 +82,7 @@ const episodesData = [
   },
 ];
 
-test("render epidsodes when data fetch finishes", () => {
+test("render epidsodes when data fetch finishes", async () => {
   const { rerender } = render(<Episodes episodes={[]} />);
 
   let episodesArr = screen.queryAllByTestId(/episodes/i);
